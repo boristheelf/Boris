@@ -76,20 +76,20 @@
         </ul>
     </div>
 
-    <!-- 🐾 DYNAMIC GUESTBOOK COMMENT SECTION -->
+    <!-- 🐾 CUSDIS COMMENT BOX START -->
     <div class="container-box">
         <h2>❖ Boris' Guestbook</h2>
-        <div id="disqus_thread"></div>
+        <div id="cusdis_thread"
+             data-host="https://cusdis.com"
+             data-app-id="9f5be6cb-99f5-4428-bc88-9bd654b0e5fa"
+             data-page-id="boris_cat_main"
+             data-page-url="https://github.io"
+             data-page-title="Boris Cat Website"
+             data-theme="dark">
+        </div>
+        <script async defer src="https://cusdis.com"></script>
     </div>
-
-    <script>
-        (function() { 
-            var d = document, s = d.createElement('script');
-            s.src = 'https://boris-guestbook.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
+    <!-- 🐾 CUSDIS COMMENT BOX END -->
 
 </body>
 </html>
