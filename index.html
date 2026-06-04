@@ -144,8 +144,8 @@
             <button class="reaction-btn" onclick="addReaction('wow')">👑<span id="wow-count">0</span></button>
         </div>
 
-        <!-- 2. Secure Guestbook Form -->
-        <form action="https://formspree.io" method="POST">
+        <!-- 2. Working FormBold Guestbook Form -->
+        <form action="https://formbold.com" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <textarea name="message" rows="3" placeholder="Leave a compliment for Boris..." required></textarea>
             <button type="submit" class="submit-btn">Submit to Guestbook 🐾</button>
@@ -153,7 +153,6 @@
     </div>
 
     <script>
-        // Simple live click response for reactions
         function addReaction(type) {
             var countEl = document.getElementById(type + '-count');
             var currentCount = parseInt(countEl.innerText);
