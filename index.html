@@ -76,20 +76,16 @@
         </ul>
     </div>
 
-    <!-- 🐾 GUESTBOOK COMMENT SECTION -->
+    <!-- 🐾 DYNAMIC GUESTBOOK COMMENT SECTION -->
     <div class="container-box">
         <h2>❖ Boris' Guestbook</h2>
         <div id="disqus_thread"></div>
     </div>
 
     <script>
-        var disqus_config = function () {
-            this.page.url = "https://boristheelf.github.io/Boris/";  
-            this.page.identifier = 'boris-cat-website-global'; 
-        };
         (function() { 
             var d = document, s = d.createElement('script');
-            s.src = 'https://disqus.com';
+            s.src = 'https://boris-guestbook.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
