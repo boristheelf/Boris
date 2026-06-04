@@ -47,6 +47,7 @@
             font-size: 1.4rem;
             border-bottom: 1px solid #e5c158;
             padding-bottom: 8px;
+            margin-bottom: 20px;
         }
         ul {
             color: #e0e0e0;
@@ -59,6 +60,8 @@
             color: #e5c158;
         }
     </style>
+    <!-- LogTalk Engine Styles -->
+    <link rel="stylesheet" href="https://logtalk.app">
 </head>
 <body>
     <h1>Welcome to Boris' website!</h1>
@@ -76,20 +79,19 @@
         </ul>
     </div>
 
-    <!-- 🐾 CUSDIS COMMENT BOX START -->
+    <!-- 🐾 REACTION & COMMENT WIDGET BOX -->
     <div class="container-box">
-        <h2>❖ Boris' Guestbook</h2>
-        <div id="cusdis_thread"
-             data-host="https://cusdis.com"
-             data-app-id="9f5be6cb-99f5-4428-bc88-9bd654b0e5fa"
-             data-page-id="boris_cat_main"
-             data-page-url="https://github.io"
-             data-page-title="Boris Cat Website"
-             data-theme="dark">
-        </div>
-        <script async defer src="https://cusdis.com"></script>
+        <h2>❖ Boris' Guestbook & Reactions</h2>
+        
+        <!-- Reaction Buttons Component -->
+        <div id="logtalk-reactions" data-widget="reactions" data-theme="dark" style="margin-bottom: 25px;"></div>
+        
+        <!-- Comment Thread Component -->
+        <div id="logtalk-comments" data-widget="comments" data-theme="dark"></div>
     </div>
-    <!-- 🐾 CUSDIS COMMENT BOX END -->
+
+    <!-- LogTalk Processing Script -->
+    <script src="https://logtalk.app" data-id="boris-elf-cat-site" async></script>
 
 </body>
 </html>
